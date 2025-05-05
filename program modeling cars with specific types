@@ -1,0 +1,33 @@
+class Car:
+	def __init__(self,brand,price,model,color):
+		self.brand=brand
+		self.model=model
+		self.price=price
+		self.color=color
+	def display(self):
+		print(f"{self.brand}")
+		print(f"{self.price}")
+		print(f"{self.model}")
+		print(f"{self.color}")
+class Car1(Car):
+	def display(self):
+		super().display()
+class Car2(Car):
+	def display(self):
+		super().display()
+def get_car_details():
+	brand = input("brand: ")
+	price = float(input("price: "))
+	model = input("model: ")
+	color = input("color: ")
+	return brand, price, model, color
+print("Details for Car 1:")
+car1_brand, car1_price, car1_model, car1_color = get_car_details()
+car1=Car1(car1_brand,car1_price,car1_model,car1_color)
+print("Details for Car 2:")
+car2_brand, car2_price, car2_model, car2_color = get_car_details()
+car2=Car1(car2_brand,car2_price,car2_model,car2_color)
+print("Car 1 Details:")
+car1.display()
+print("Car 2 Details:")
+car2.display()
