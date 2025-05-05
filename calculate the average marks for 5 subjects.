@@ -1,0 +1,17 @@
+a = float(input('subject 1: '))
+b = float(input('subject 2: '))
+c = float(input('subject 3: '))
+d = float(input('subject 4: '))
+e = float(input('subject 5: '))
+average = (a+b+c+d+e)/5.0
+print('Average Marks: %.2f'%average)
+if(average>=90  and average<=100):
+	print('Grade: A')
+elif(average>=80 and average<= 89):
+	print('Grade: B')
+elif(average>=70 and average<=79):
+	print('Grade: C')
+elif(average>=60 and average<=69):
+	print('Grade: D')
+else:
+	print('Grade: F')
