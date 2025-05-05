@@ -1,0 +1,7 @@
+radius = int(input('Enter the radius : '))
+PI = 3.14
+Area = PI * radius * radius;
+if(radius<0):
+	print("Enter a positive value upto 100")
+else:
+	print("Area of circle = %f"%Area)
